@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    transition: 2s !important;
+  
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      margin: 0 1.25em;
+      //cursor: pointer;
+      padding: 3px;
+      border: solid 1px #678983;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+  
+    .social-link:hover {
+      transition: 0.3s;
+      box-shadow: #678983 0 0 30px;
+    }
+  
+    .svg {
+      height: 20px;
+      width: 20px;
+      background-color: #919191;
+      // margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .footer {
+      .social-link {
+        border: none;
+        margin: 0 10px;
+      }
+    }
+  }
+  
+.footer-img {
+  width: 21px;
+}

@@ -1,0 +1,442 @@
+.landing-page-parent {
+    height: 100vh;
+    position: relative;
+    // display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: center;
+    overflow: hidden;
+    animation: background-change 1s ease-in-out;
+    animation-fill-mode: forwards;
+    // background-color: #f5f5f5;
+    // background: url("../static/media/lines.png");
+    padding: 0 var(--large-padding);
+    background-color: white;
+
+    .name {
+      display: flex;
+      padding: 10px 13px;
+      border-radius: 10px;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin: 0 10px 10px 0;
+      transition: 0.3s;
+    }
+
+    .landing-pic {
+      border-radius: 20px;
+      margin-bottom: 33px;
+    }
+  
+    .footer-div {
+      position: absolute;
+      left: 50%;
+      bottom: 30px;
+      transform: translate(-50%, 0);
+    }
+  
+    .landing-text-area {
+      height: fit-content;
+      // z-index: 3;
+      transition-duration: 7s;
+      transition: 2s;
+      // margin-top: 180px;
+      position: absolute;
+      display: flex;
+      left: 50%;
+      transform: translate(-50%, 0);
+  
+      .large-text {
+        font-family: Lora;
+        margin-left: -220px;
+      }
+  
+      h2 {
+        font-weight: 100;
+        max-width: 429px;
+        line-height: 50px;
+        margin-left: 300px;
+        letter-spacing: 0.5px;
+      }
+
+      /*h1 {
+        margin-left: 300px;
+      }*/
+    }
+    .buttons {
+      display: flex;
+      // margin-left: 300px;
+      flex-wrap: wrap;
+      animation-delay: .5s !important;
+
+      .experience-button {
+        display: flex;
+        width: 180px;
+        height: 30px;
+        padding: 10px 20px;
+        background: #678983;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 10px 10px 0;
+        transition: 0.3s;
+  
+        p {
+          color: white;
+          font-weight: 300;
+        }
+      }
+  
+      .experience-button:hover {
+        transition: 0.3s;
+        transform: rotate(-10deg);
+      }
+  
+      .outline-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 30px;
+        padding: 8px 19px;
+        border: #678983 solid 2px;
+        border-radius: 10px;
+        transition: 0.3s;
+        background: none;
+  
+        p {
+          color: #678983;
+          font-weight: 300;
+        }
+      }
+  
+      .outline-button:hover {
+        transition: 0.3s;
+        transform: rotate(-15deg);
+      }
+    }
+  
+    .graphic {
+      height: fit-content;
+      max-width: 50vw;
+      z-index: 1;
+      position: absolute;
+    }
+
+    .large-text-header {
+      font-weight:300;
+      font-size:200px;
+      height: fit-content;
+      // max-width: 50vw;
+      z-index: 2;
+      animation-delay: .5s !important;
+      // display: flex;
+      padding: 0 var(--large-padding);
+      text-align: center;
+      transform: translate(-50%,0);
+      margin-top: 15%;
+      margin-bottom: 3%;
+    }
+
+    .mobile-click-to-menu {
+      display: none;
+    }
+  }
+  
+  .tap-anywhere {
+    display: none;
+    animation: bounce-3 2s infinite ease;
+  }
+  
+  @keyframes bounce-3 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    // 50% {
+    //   transform: translateY(0);
+    // }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  // @media (max-width: 1199.98px) {
+  //   .landing-page-parent {
+  //     padding: 0 40px;
+  //   }
+  // }
+
+  @media (min-width: 1545.99px) and (max-width: 1650.98px) {
+    .landing-page-parent{
+      padding: 0 40px;
+      .buttons {
+        margin-left: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        animation-delay: .5s !important;
+        .experience-button {
+          width: 180px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1461px) and (max-width: 1545.98px) {
+    .landing-page-parent{
+      padding: 0 40px;
+      .landing-text-area {
+        margin-top: 100px;
+      }
+      .large-text-header {
+        font-size: 150px;
+      }
+      .buttons {
+        // margin-left: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        animation-delay: .5s !important;
+        .experience-button {
+          width: 180px;
+          
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1266px) and (max-width: 1460px) {
+    .landing-page-parent{
+      padding: 0 40px;
+      .landing-text-area {
+        margin-top: 100px;
+      }
+      .large-text-header {
+        font-size: 150px;
+      }
+      .buttons {
+        margin-left: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        animation-delay: .5s !important;
+        .experience-button {
+          width: 180px;
+          
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1200px) and (max-width: 1265px) {
+    .landing-page-parent{
+      padding: 0 40px;
+      .landing-text-area {
+        margin-top: 125px;
+      }
+      .large-text-header {
+        font-size: 150px;
+      }
+      .buttons {
+        margin-left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        animation-delay: .5s !important;
+        .experience-button {
+          width: 180px;
+        }
+        .landing-pic {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1051px) and (max-width: 1199.98px) {
+    .landing-page-parent{
+      padding: 0 40px;
+      .landing-text-area {
+        margin-top: 90px;
+      }
+      .large-text-header {
+        font-size: 125px;
+      }
+      .buttons {
+        margin-left: 100px;
+        display: flex;
+        flex-wrap: inherit;
+        .experience-button {
+          width: 180px;
+        }
+        .landing-pic {
+          width: 50%;
+        } 
+      }
+    }
+  }
+
+  @media (min-width: 991.99px) and (max-width: 1050.98px) {
+    .landing-page-parent{
+      padding: 0 40px;
+      .landing-text-area {
+        margin-top: 110px;
+      }
+      .large-text-header {
+        font-size: 125px;
+      }
+      .buttons {
+        margin-left: 25px;
+        display: flex;
+        flex-wrap: inherit;
+        .experience-button {
+          width: 180px;
+        }
+        .landing-pic {
+          width: 50%;
+        } 
+      }
+    }
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (max-width: 991.98px) {
+    .landing-page-parent {
+      padding: 0 60px;
+      background-size: 400%;
+      .landing-text-area {
+        .large-text {
+          margin-left: 0;
+        }
+
+        .large-text-header{
+          font-size: 15vw;
+        }
+  
+        h2 {
+          margin-left: 0;
+        }
+
+        h1 {
+          margin-left: 0;
+        }
+      }
+      .graphic {
+        display: none;
+      }
+
+      .name {
+        display: flex;
+        padding: inherit;
+        border-radius: 10px;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin: 0 10px 10px 0;
+        transition: 0.3s;
+      }
+
+      .landing-pic {
+        display: none;
+      }
+
+      .landing-text-area {
+        height: fit-content;
+        z-index: 3;
+        transition-duration: 7s;
+        transition: 2s;
+        margin-top: 250px;
+      }
+
+      .large-text-header {
+        font-size: 15vw;
+        font-weight: 600;
+        margin-top: 200px;  
+        margin-bottom: 280px;
+        padding-bottom: 100px;  
+        position: absolute; 
+        height: fit-content;
+      }
+
+      .buttons {
+        margin-left: 0;
+        .experience-button {
+          width: 195px;
+          height: 40px;
+          padding: 6px 15px;
+        }
+        .outline-button {
+          width: 220px;
+          height: 40px;
+          padding: 4px 0px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .landing-page-parent{
+      padding: 0 40px;
+      .landing-text-area {
+        .large-text {
+          margin: 0;
+        }
+        h2 {
+          line-height: 40px;
+          margin: 30px 0;
+        }
+      }
+      .large-text-header {
+        font-size: 15vw;
+        font-weight: 600;
+        margin-top: 55px;  
+        margin-bottom: 280px;
+        padding-bottom: 0px;  
+        position: absolute; 
+        height: fit-content;
+      }
+      .buttons {
+        margin-left: 0;
+        .experience-button {
+          width: 150px;
+          height: 40px;
+          padding: 6px 15px;
+        }
+        .outline-button {
+          padding: 4px 0px;
+          height: 40px;
+          width: 220px;
+        }
+      }
+    }
+  }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (max-width: 575.98px) {
+    .landing-page-parent {
+      padding: 0 40px;
+      .landing-text-area {
+        .large-text {
+          margin: 0;
+        }
+        h2 {
+          line-height: 40px;
+          margin: 30px 0;
+        }
+      }
+      .buttons {
+        .experience-button {
+          width: 170px;
+          height: 40px;
+          padding: 6px 15px;
+        }
+  
+        .outline-button {
+          padding: 4px 0px;
+          height: 40px;
+          width: 195px;
+        }
+      }
+    }
+  }
+
+  
+  
